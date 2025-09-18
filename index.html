@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Men — Mini Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Salom — Men Yuldoshev Azim</h1>
+      <p class="lead">Oddiy, tezkor va chiroyli one-page portfolio — SPCK’ga tayyor.</p>
+      <div class="actions">
+        <button id="themeBtn">Tungi rejim</button>
+        <a href="#projects" class="btn-outline">Loyihalarimga o'tish</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Haqqimda</h2>
+      <p>Men front-end bilan ishlayman. Bu kichik demo — HTML, CSS va JavaScript yordamida yaratilgan.</p>
+    </section>
+
+    <section id="projects" class="card grid">
+      <h2>Loyihalar</h2>
+      <div class="project" tabindex="0">
+        <h3>Interactive Card</h3>
+        <p>Hover qilib ko‘ring — oddiy interaktiv effekt.</p>
+      </div>
+      <div class="project" tabindex="0">
+        <h3>Responsive Layout</h3>
+        <p>Telefon va kompyuter uchun moslashadi.</p>
+      </div>
+      <div class="project" tabindex="0">
+        <h3>SPCK Ready</h3>
+        <p>To‘g‘ridan-to‘g‘ri SPCK’ga joylab ishlating.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Aloqa</h2>
+      <form id="contactForm">
+        <label>Ism
+          <input type="text" id="name" placeholder="Ismingiz" required>
+        </label>
+        <label>Email
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </label>
+        <label>Xabar
+          <textarea id="message" placeholder="Xabaringiz..." required></textarea>
+        </label>
+        <button type="submit" class="btn">Yuborish</button>
+      </form>
+      <p id="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> — Tayyor: ChatGPT</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
